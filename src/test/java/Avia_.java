@@ -38,6 +38,8 @@ public class Avia_ {
         driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
     }
 
+    
+
     @Test public void Prices () throws IOException, InterruptedException, ATUTestRecorderException {
 
         //Начинаем видеозапись
@@ -127,7 +129,11 @@ public class Avia_ {
                 }
             }
         }
+
+
         wri.flush();
         wri.close();
+
+
     }
 }
