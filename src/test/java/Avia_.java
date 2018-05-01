@@ -44,7 +44,7 @@ public class Avia_ {
         driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
     }
 
-    @Test public void Head() throws IOException, InterruptedException, ATUTestRecorderException {
+    @Test public void Prices () throws IOException, InterruptedException, ATUTestRecorderException {
 
         //Начинаем видеозапись
             ATUTestRecorder recorder = new ATUTestRecorder("ScriptVideos", false);
@@ -82,11 +82,11 @@ public class Avia_ {
           recorder.stop();
     }
 
-//    @After
-//    public void stop(){
-//        driver.quit();
-//        driver = null;
-//    }
+    @After
+    public void stop(){
+        driver.quit();
+        driver = null;
+    }
 
 
     private void VerifyPrices () throws IOException {
