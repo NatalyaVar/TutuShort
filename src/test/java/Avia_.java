@@ -5,14 +5,8 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.internal.Locatable;
 import org.openqa.selenium.io.FileHandler;
-import org.openqa.selenium.remote.CapabilityType;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import javax.imageio.ImageIO;
-import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -20,8 +14,6 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-
 
 public class Avia_ {
 
@@ -52,14 +44,8 @@ public class Avia_ {
 
         WebDriverWait wait = new WebDriverWait(driver, 40);
 
-
-//        //Задаем ожидания загрузки страницы
-//        DesiredCapabilities capabilities = new DesiredCapabilities();
-//        capabilities.setCapability(CapabilityType.PAGE_LOAD_STRATEGY, "eager");
-
         //Идем на страницу входа
         driver.navigate().to(baseurl);
-
 
         //Рейсы соседних городов
         driver.findElement(By.cssSelector("li.service_item.m-near_cities")).click();
