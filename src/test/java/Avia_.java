@@ -15,6 +15,8 @@ import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+
+
 public class Avia_ {
 
          public static WebDriver getDriver() {
@@ -74,11 +76,9 @@ public class Avia_ {
         driver = null;
     }
 
-
     private void VerifyPrices () throws IOException {
 
         FileWriter wri = new FileWriter("NaN.txt", true);
-
 
         //Таблица с рейсами и ценами
         WebElement nearCities = driver.findElement(By.cssSelector("#near_cities > div:nth-child(5)"));
